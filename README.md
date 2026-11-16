@@ -11,7 +11,7 @@ A cinematic, interactive, and mobile-first Indian Engagement Invitation website 
 - **💍 Proposing Couple Reveal**: Uses the exact supplied cartoon characters featuring Groom Risav (in formal black suit, curly hair & glasses) kneeling with a diamond engagement ring, and Bride Mansi (in traditional pink lehenga) jumping with joy, complete with animated ring sparkles and floating hearts!
 - **📜 Romantic "Terms & Conditions Accepted" Story**: Includes the playful and heartwarming agreement signed by the couple with official checklist vows.
 - **👨‍👩‍👧‍👦 Family Introductions**:
-  - **GROOM**: RISAV (S/o. Mr. Binod Prasad Gupta & Mrs. Pushpa Devi)
+  - **GROOM**: RISAV (S/o. Mr. Binod Prasad Gupta & Mrs. Pushpa Gupta)
   - **BRIDE**: MANSI (D/o. Mr. Sanjeev Kumar Suman & Mrs. Manorama Devi)
 - **⏳ Auspicious Schedule & Live Countdown**:
   - **Date**: Sunday, 6th December, 2026

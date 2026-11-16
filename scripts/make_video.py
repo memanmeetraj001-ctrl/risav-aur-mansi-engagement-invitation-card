@@ -346,7 +346,7 @@ for f in range(TOTAL_FRAMES):
         d.rectangle([140, gy - 60, WIDTH - 140, gy + 130], fill=(255, 248, 235, 220), outline=GOLD, width=2)
         d.text((WIDTH//2, gy - 25), "GROOM", fill=DEEP_GOLD, font=FONT_SERIF_SM, anchor="mm")
         d.text((WIDTH//2, gy + 20), "RISAV", fill=MAROON, font=FONT_SERIF_TITLE, anchor="mm")
-        d.text((WIDTH//2, gy + 75), "S/o. Mr. Binod Prasad Gupta & Mrs. Pushpa Devi", fill=ROYAL_MAROON, font=FONT_SERIF_BODY, anchor="mm")
+        d.text((WIDTH//2, gy + 75), "S/o. Mr. Binod Prasad Gupta & Mrs. Pushpa Gupta", fill=ROYAL_MAROON, font=FONT_SERIF_BODY, anchor="mm")
         
         # Decorative Ring / Heart between cards
         d.text((WIDTH//2, gy + 175), "❤️  &  💍", fill=PINK_HEART, font=FONT_SERIF_SUB, anchor="mm")

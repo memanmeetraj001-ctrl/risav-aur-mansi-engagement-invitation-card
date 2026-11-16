@@ -34,7 +34,7 @@ export default function FamilyIntroduction() {
             </p>
             <p className="text-xs text-gray-600">&amp;</p>
             <p className="font-bold text-sm sm:text-base text-[#3B0612] font-serif">
-              Mrs. Pushpa Devi
+              Mrs. Pushpa Gupta
             </p>
           </div>
         </div>

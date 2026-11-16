@@ -433,7 +433,7 @@ for f in range(TOTAL_FRAMES):
         draw_gold_text(d, (WIDTH//2, gy - 25), "THE GROOM", FONT_CINZEL_SM, anchor="mm")
         draw_gold_text(d, (WIDTH//2, gy + 18), "RISAV", FONT_CINZEL_LG, anchor="mm")
         d.text((WIDTH//2, gy + 65), "S/o. Mr. Binod Prasad Gupta", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
-        d.text((WIDTH//2, gy + 102), "& Mrs. Pushpa Devi", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
+        d.text((WIDTH//2, gy + 102), "& Mrs. Pushpa Gupta", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
         
         # Vector Hearts & Golden Ring between Cards
         draw_vector_heart(d, WIDTH//2 - 95, 1055, 20, ROSE_RED, (255, 190, 210))
