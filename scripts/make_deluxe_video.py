@@ -30,7 +30,7 @@ FONT_VIBES_MD = ImageFont.truetype(os.path.join(FONT_DIR, "GreatVibes-Regular.tt
 FONT_ALEX_LG = ImageFont.truetype(os.path.join(FONT_DIR, "AlexBrush-Regular.ttf"), 64)
 FONT_ALEX_MD = ImageFont.truetype(os.path.join(FONT_DIR, "AlexBrush-Regular.ttf"), 50)
 
-FONT_SERIF_BOLD = ImageFont.truetype(r"C:\Windows\Fonts\georgiab.ttf", 34)
+FONT_SERIF_BOLD = ImageFont.truetype(r"C:\Windows\Fonts\georgiab.ttf", 30)
 FONT_SERIF_REG = ImageFont.truetype(r"C:\Windows\Fonts\georgia.ttf", 28)
 FONT_SERIF_SM = ImageFont.truetype(r"C:\Windows\Fonts\georgia.ttf", 24)
 FONT_SANS_BOLD = ImageFont.truetype(r"C:\Windows\Fonts\arialbd.ttf", 26)
@@ -427,26 +427,29 @@ for f in range(TOTAL_FRAMES):
         draw_jharokha_frame(frame, img_portrait, portrait_box, zoom=1.03)
         
         # Groom Card
-        gy = 940
-        d.rectangle([110, gy - 65, WIDTH - 110, gy + 135], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
-        d.rectangle([118, gy - 57, WIDTH - 118, gy + 127], outline=GOLD_METALLIC, width=1)
-        draw_gold_text(d, (WIDTH//2, gy - 28), "THE GROOM", FONT_CINZEL_SM, anchor="mm")
-        draw_gold_text(d, (WIDTH//2, gy + 20), "RISAV", FONT_CINZEL_LG, anchor="mm")
-        d.text((WIDTH//2, gy + 80), "S/o. Mr. Binod Prasad Gupta & Mrs. Pushpa Devi", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
+        gy = 880
+        d.rectangle([90, gy - 60, WIDTH - 90, gy + 130], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
+        d.rectangle([98, gy - 52, WIDTH - 98, gy + 122], outline=GOLD_METALLIC, width=1)
+        draw_gold_text(d, (WIDTH//2, gy - 25), "THE GROOM", FONT_CINZEL_SM, anchor="mm")
+        draw_gold_text(d, (WIDTH//2, gy + 18), "RISAV", FONT_CINZEL_LG, anchor="mm")
+        d.text((WIDTH//2, gy + 65), "S/o. Mr. Binod Prasad Gupta", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
+        d.text((WIDTH//2, gy + 102), "& Mrs. Pushpa Devi", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
         
         # Vector Hearts & Golden Ring between Cards
-        draw_vector_heart(d, WIDTH//2 - 95, gy + 180, 20, ROSE_RED, (255, 190, 210))
-        draw_golden_ring(d, WIDTH//2, gy + 180, 22)
-        draw_vector_heart(d, WIDTH//2 + 95, gy + 180, 20, ROSE_RED, (255, 190, 210))
+        draw_vector_heart(d, WIDTH//2 - 95, 1055, 20, ROSE_RED, (255, 190, 210))
+        draw_golden_ring(d, WIDTH//2, 1055, 22)
+        draw_vector_heart(d, WIDTH//2 + 95, 1055, 20, ROSE_RED, (255, 190, 210))
         
-        # Bride Card with Brother
-        by = gy + 280
-        d.rectangle([110, by - 65, WIDTH - 110, by + 160], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
-        d.rectangle([118, by - 57, WIDTH - 118, by + 152], outline=GOLD_METALLIC, width=1)
-        draw_gold_text(d, (WIDTH//2, by - 28), "THE BRIDE", FONT_CINZEL_SM, anchor="mm")
+        # Bride Card with Brother (PERFECTLY FITTED, ZERO OVERFLOW!)
+        by = 1205
+        d.rectangle([90, by - 60, WIDTH - 90, by + 175], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
+        d.rectangle([98, by - 52, WIDTH - 98, by + 167], outline=GOLD_METALLIC, width=1)
+        draw_gold_text(d, (WIDTH//2, by - 25), "THE BRIDE", FONT_CINZEL_SM, anchor="mm")
         draw_gold_text(d, (WIDTH//2, by + 18), "MANSI", FONT_CINZEL_LG, anchor="mm")
-        d.text((WIDTH//2, by + 70), "D/o. Mr. Sanjeev Kumar Suman & Mrs. Manorama Devi", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
-        d.text((WIDTH//2, by + 118), "Loving Brother: Mr. Manmeet Raj", fill=GOLD_LIGHT, font=FONT_SERIF_BOLD, anchor="mm")
+        d.text((WIDTH//2, by + 65), "D/o. Mr. Sanjeev Kumar Suman", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
+        d.text((WIDTH//2, by + 102), "& Mrs. Manorama Devi", fill=IVORY_CREAM, font=FONT_SERIF_BOLD, anchor="mm")
+        d.line([(WIDTH//2 - 140, by + 128), (WIDTH//2 + 140, by + 128)], fill=GOLD_METALLIC, width=1)
+        d.text((WIDTH//2, by + 152), "Loving Brother: Mr. Manmeet Raj", fill=GOLD_LIGHT, font=FONT_SERIF_BOLD, anchor="mm")
         
         if not sample_saved[4] and f == 465:
             frame.convert("RGB").save(os.path.join(BRAIN_DIR, "preview_slide_4_families.jpg"))
@@ -462,23 +465,23 @@ for f in range(TOTAL_FRAMES):
         
         # Card 1: DATE
         cy1 = 490
-        d.rectangle([120, cy1 - 85, WIDTH - 120, cy1 + 85], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
-        d.rectangle([128, cy1 - 77, WIDTH - 128, cy1 + 77], outline=GOLD_METALLIC, width=1)
-        draw_gold_text(d, (WIDTH//2, cy1 - 42), "-- DATE --", FONT_CINZEL_MD, anchor="mm")
-        draw_gold_text(d, (WIDTH//2, cy1 + 25), "Sunday, 6th December, 2026", FONT_CINZEL_LG, anchor="mm")
+        d.rectangle([90, cy1 - 80, WIDTH - 90, cy1 + 80], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
+        d.rectangle([98, cy1 - 72, WIDTH - 98, cy1 + 72], outline=GOLD_METALLIC, width=1)
+        draw_gold_text(d, (WIDTH//2, cy1 - 38), "-- DATE --", FONT_CINZEL_SM, anchor="mm")
+        draw_gold_text(d, (WIDTH//2, cy1 + 22), "Sunday, 6th December, 2026", FONT_CINZEL_MD, anchor="mm")
         
         # Card 2: TIME
         cy2 = 715
-        d.rectangle([120, cy2 - 75, WIDTH - 120, cy2 + 75], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
-        d.rectangle([128, cy2 - 67, WIDTH - 128, cy2 + 67], outline=GOLD_METALLIC, width=1)
-        draw_gold_text(d, (WIDTH//2, cy2 - 32), "-- TIME --", FONT_CINZEL_MD, anchor="mm")
-        draw_gold_text(d, (WIDTH//2, cy2 + 25), "6:00 PM Onwards", FONT_CINZEL_LG, anchor="mm")
+        d.rectangle([90, cy2 - 75, WIDTH - 90, cy2 + 75], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
+        d.rectangle([98, cy2 - 67, WIDTH - 98, cy2 + 67], outline=GOLD_METALLIC, width=1)
+        draw_gold_text(d, (WIDTH//2, cy2 - 32), "-- TIME --", FONT_CINZEL_SM, anchor="mm")
+        draw_gold_text(d, (WIDTH//2, cy2 + 22), "6:00 PM Onwards", FONT_CINZEL_MD, anchor="mm")
         
         # Card 3: VENUE
         cy3 = 1060
-        d.rectangle([110, cy3 - 195, WIDTH - 110, cy3 + 195], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
-        d.rectangle([118, cy3 - 187, WIDTH - 118, cy3 + 187], outline=GOLD_METALLIC, width=1)
-        draw_gold_text(d, (WIDTH//2, cy3 - 145), "-- VENUE --", FONT_CINZEL_MD, anchor="mm")
+        d.rectangle([90, cy3 - 195, WIDTH - 90, cy3 + 195], fill=(55, 3, 12, 245), outline=GOLD_BRIGHT, width=3)
+        d.rectangle([98, cy3 - 187, WIDTH - 98, cy3 + 187], outline=GOLD_METALLIC, width=1)
+        draw_gold_text(d, (WIDTH//2, cy3 - 145), "-- VENUE --", FONT_CINZEL_SM, anchor="mm")
         draw_gold_text(d, (WIDTH//2, cy3 - 80), "GIRAFFE RESORT", FONT_CINZEL_LG, anchor="mm")
         
         d.line([(WIDTH//2 - 160, cy3 - 35), (WIDTH//2 + 160, cy3 - 35)], fill=GOLD_METALLIC, width=2)
