@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-cinzel: 'Cinzel', Georgia, serif;
+  --font-cinzel-dec: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+}
+
+body {
+  background-color: #F8F5EE;
+  color: #3B0612;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-cinzel-dec {
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Luxury Indian Wedding Gradients */
+.bg-mandala-pattern {
+  background-color: #F8F5EE;
+  background-image: 
+    radial-gradient(circle at center, rgba(255, 235, 175, 0.45) 0%, transparent 65%),
+    radial-gradient(#D4AF37 0.75px, transparent 0.75px),
+    radial-gradient(#800020 0.5px, #F8F5EE 0.5px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+  background-position: 0 0, 0 0, 16px 16px;
+}
+
+.gold-shimmer-text {
+  background: linear-gradient(135deg, #B38728 0%, #FBF5B7 30%, #DAA520 50%, #AA771C 75%, #FDF0A6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #AA771C 100%);
+}
+
+.maroon-gradient-bg {
+  background: linear-gradient(135deg, #5B0616 0%, #801323 50%, #3D030E 100%);
+}
+
+.royal-box-shadow {
+  box-shadow: 0 20px 45px -15px rgba(91, 6, 22, 0.22), 0 0 25px 0 rgba(212, 175, 55, 0.25);
+}
+
+.gold-border-glow {
+  border: 2px solid #D4AF37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.35), inset 0 0 10px rgba(212, 175, 55, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AA771C;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes floatLantern {
+  0%, 100% {
+    transform: translateY(0px) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.floating-lantern {
+  animation: floatLantern 4.5s ease-in-out infinite;
+  transform-origin: top center;
+}
